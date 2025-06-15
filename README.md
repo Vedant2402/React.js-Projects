@@ -43,12 +43,12 @@ Advanced, full-featured personal website styled to reflect a creative and profes
 ### 11. 🥦 [Nutriagent - Food Nutrition App](https://github.com/Vedant2402/Nutriagent)
 Search for food items and get nutritional insights using the Edamam API.
 
+### 12. 🧠 [AI Quotes Generator](https://github.com/Vedant2402/AI-quotes-generator)
+Generate motivational or famous quotes using AI and display them dynamically with animations.
+
 ---
 
 ## 🛠️ In Progress
-
-### 12. 🧠 AI Quotes Generator (Coming Soon)
-Generate motivational or famous quotes using AI and display them dynamically with animations.
 
 ### 13. 🎮 (Coming Soon)
 (coming Soon)
