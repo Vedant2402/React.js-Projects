@@ -17,7 +17,7 @@ A clean, responsive developer portfolio built using React.js to showcase skills,
 Fetches real-time weather data using OpenWeather API with a sleek and modern weather UI.
 
 ### 3. 🎵 [Music Search App](https://github.com/Vedant2402/music-search-app)
-Search for songs, get previews, and dynamic UI based on album art using the iTunes API.
+Search for songs, get previews, and a enjoy a dynamic UI with album art support using the iTunes API.
 
 ### 4. 🗺️ [Country Info App](https://github.com/Vedant2402/Country-Info-App)
 Displays country details like flags, population, region, and languages using the REST Countries API.
@@ -46,14 +46,14 @@ Search for food items and get nutritional insights using the Edamam API.
 ### 12. 🧠 [AI Quotes Generator](https://github.com/Vedant2402/AI-quotes-generator)
 Generate motivational or famous quotes using AI and display them dynamically with animations.
 
+### 13. 🎯 [MindBloom - Your Emotional Wellness Journey](https://e-healthjournal.netlify.app/)
+A beautiful, intuitive platform for tracking your emotions, journaling your thoughts, and discovering patterns in your mental wellness journey.
+
 ---
 
 ## 🛠️ In Progress
 
-### 13. 🎮 (Coming Soon)
-(coming Soon)
-
-### 14. 🎯 (Coming Soon)
+### 14. 🎮 (Coming Soon)
 (Coming Soon)
 
 ### 15. 🔥 (Coming Soon)
