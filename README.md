@@ -49,14 +49,14 @@ Generate motivational or famous quotes using AI and display them dynamically wit
 ### 13. 🎯 [MindBloom - Your Emotional Wellness Journey](https://e-healthjournal.netlify.app/)
 A beautiful, intuitive platform for tracking your emotions, journaling your thoughts, and discovering patterns in your mental wellness journey.
 
+### 14. 🎮 [ATS Friendly Cover Letter Generator](https://coverletter-ai.netlify.app/)
+A beautiful, retro-styled web application for generating personalized cover letters using AI. Built with React, TypeScript, Firebase Authentication, and featuring a vintage aesthetic.
+
 ---
 
 ## 🛠️ In Progress
 
-### 14. 🎮 (Coming Soon)
-(Coming Soon)
-
-### 15. 🔥 (Coming Soon)
+### 15. 🔥 Prompt-Engine-App
 (Coming Soon)
 
 ---
