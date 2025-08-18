@@ -52,13 +52,14 @@ A beautiful, intuitive platform for tracking your emotions, journaling your thou
 ### 14. 🎮 [ATS Friendly Cover Letter Generator](https://coverletter-ai.netlify.app/)
 A beautiful, retro-styled web application for generating personalized cover letters using AI. Built with React, TypeScript, Firebase Authentication, and featuring a vintage aesthetic.
 
+### 15. 🔥 [Prompt-Engine-App](https://prompthelperr.netlify.app/)
+An AI-powered prompt ideation and generation web application. Users can sign up, generate structured prompts across categories (writing, coding, business, education), refine them, save history, and export content. The interface supports light/dark themes, animated backgrounds, and responsive design.
+
 ---
 
 ## 🛠️ In Progress
 
-### 15. 🔥 Prompt-Engine-App
-(Coming Soon)
-
+ALL DONE
 ---
 
 ## 🏁 Goals of This Challenge
