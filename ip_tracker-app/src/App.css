@@ -1,0 +1,57 @@
+@import 'leaflet/dist/leaflet.css';
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #00ff00;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.input-group {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 260px;
+  font-size: 1rem;
+  border: 1px solid #00ff00;
+  background-color: #000;
+  color: #00ff00;
+  outline: none;
+}
+
+input::placeholder {
+  color: #0f0;
+  opacity: 0.6;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00;
+}
