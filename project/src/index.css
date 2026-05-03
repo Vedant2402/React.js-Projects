@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 50%, #fb923c 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* Retro paper texture effect */
+.paper-texture {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Vintage button effects */
+.vintage-button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #d97706, #ea580c);
+  box-shadow: 
+    0 4px 15px rgba(217, 119, 6, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.vintage-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px rgba(217, 119, 6, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.vintage-button:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 2px 10px rgba(217, 119, 6, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Form input animations */
+.form-input {
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.form-input:focus {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #d97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+/* Letter preview animations */
+.letter-preview {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typewriter effect for generated content */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #d97706;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #d97706; }
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
