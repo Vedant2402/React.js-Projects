@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+.app-container {
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Themes */
+.app-container.sunny {
+  background-color: #f8b400;
+  background-image: linear-gradient(to bottom right, #f8b400, #ffd700);
+}
+
+.app-container.cloudy {
+  background-color: #7f8c8d;
+  background-image: linear-gradient(to bottom right, #95a5a6, #7f8c8d);
+}
+
+.app-container.rainy {
+  background-color: #3498db;
+  background-image: linear-gradient(to bottom right, #2980b9, #3498db);
+}
+
+.app-container.snowy {
+  background-color: #ecf0f1;
+  background-image: linear-gradient(to bottom right, #bdc3c7, #ecf0f1);
+  color: #333;
+}
+
+.app-container.default {
+  background-color: #2c3e50;
+  background-image: linear-gradient(to bottom right, #34495e, #2c3e50);
+}
+
+.weather-info {
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
+}
