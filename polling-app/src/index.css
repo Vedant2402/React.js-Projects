@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Light and Dark Modes */
+.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Custom Toggle Switch */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  background: #e0e0e0;
+  border-radius: 50px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.switch {
+  width: 30px;
+  height: 30px;
+  background: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.switch-light {
+  background: #ffc107; /* Yellow sun */
+}
+
+.switch-dark {
+  background: #2196f3; /* Blue moon */
+}
+
+.toggle-label {
+  margin-left: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Smooth Icon sizing */
+.icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Container for page */
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* Poll bar */
+.poll-bar-container {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 8px;
+}
+
+.poll-bar-fill {
+  background: #7f00ff;
+  height: 12px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+/* App Wrapper */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 2rem;
+  background: #202020;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid #333;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #7f00ff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.email-link:hover {
+  color: #e100ff;
+}
+
+/* Form Styling */
+.create-poll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.input-field {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  background: transparent;
+  color: inherit; /* important: input text color same as container */
+}
+
+.input-field::placeholder {
+  color: #999;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Buttons */
+.add-option-button {
+  background-color: #7f00ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-poll-button {
+  background-color: #03dac5;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-poll-button:hover {
+  background-color: #00c9b7;
+}
+.add-option-button:hover {
+  background-color: #9d00ff;
+}
+
+.create-poll-button {
+  background-color: #03dac5;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-poll-button:hover {
+  background-color: #00c9b7;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Fix for Dark Mode */
+.dark .form-container {
+  background: #1e1e1e; /* Dark background inside dark mode */
+  color: #ffffff; /* Bright white text */
+}
+
+
+/* Fade In Animation */
+.fade-in {
+  animation: fadeInAnimation 0.8s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Success Message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+/* Poll Card */
+.card h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.dark .card h2 {
+  color: #ffffff; /* Bright white title */
+}
+
+
+.dark .poll-bar-container {
+  background: #555; /* Darker bar container */
+}
+
+.dark .poll-bar-fill {
+  background: #7f00ff; /* Same purple highlight */
+}
+
+.poll-bar-container {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 8px;
+}
+
+.poll-bar-fill {
+  background: #7f00ff;
+  height: 12px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.clear-vote-button {
+  background-color: #7f00ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.clear-vote-button:hover {
+  background-color: #9d00ff;
+}
