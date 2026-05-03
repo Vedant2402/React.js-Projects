@@ -1,0 +1,404 @@
+/* Base Styles */
+:root {
+  --primary-color: #626F47; /* Olive Green */
+  --secondary-color: #A4B465; /* Light Olive */
+  --bg-color: #FFFFFF; /* Light background for light mode */
+  --text-color: #2b2d42;
+  --light-text: #8d99ae;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color); /* Light background by default */
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and text color transition */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #ffffff; /* Light background */
+  color: #2b2d42; /* Dark text color */
+}
+
+body.light-mode .search-input {
+  background-color: #f4f4f4;
+  color: #2b2d42;
+}
+
+body.light-mode .search-button {
+  background-color: #626F47; /* Olive green button */
+  color: white;
+}
+
+body.light-mode .search-button:hover {
+  background-color: #A4B465; /* Lighter olive on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #2b2d42; /* Dark background */
+  color: #ffffff; /* Light text for dark mode */
+}
+
+body.dark-mode .search-input {
+  background-color: #3a3a3a; /* Dark input field */
+  color: #ffffff;
+}
+
+body.dark-mode .search-button {
+  background-color: #A4B465; /* Darker olive button */
+}
+
+body.dark-mode .search-button:hover {
+  background-color: #626F47; /* Lighter olive on hover */
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background-color: #626F47;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #A4B465;
+}
+
+/* Other styles for the page (header, footer, etc.) */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Example of a toggle button for switching modes */
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.toggle-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* App Container */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.suggestion {
+  font-size: 1rem;
+  color: var(--light-text);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.suggestion-word {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+/* Search Container */
+.search-container {
+  margin-bottom: 2rem;
+}
+
+.search-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative; /* To position the button inside */
+}
+
+.search-input {
+  flex: 1;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e9ecef;
+  border-radius: 20px 0 0 20px; /* Rounded corners for input */
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+  height: 40px; /* Ensure input height matches button */
+  padding-right: 3.5rem; /* Space for the button inside */
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%; /* Button height matches input field */
+  padding: 0 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0; /* Rounded corners for button */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text inside the button */
+  transition: var(--transition);
+}
+
+.search-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+.search-button span {
+  display: inline-block; /* Display the text inside the button */
+  color: white;
+  font-weight: 500;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e9ecef, transparent);
+  margin: 2rem 0;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  margin-top: 2rem;
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.empty-state:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.empty-state p {
+  color: var(--light-text);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.footer p {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 1.5rem;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+  }
+  
+  .search-form {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    border-radius: 8px;
+    margin-bottom: rem;
+  }
+  
+  .search-button {
+    border-radius: 8px;
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .search-text {
+    display: none;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.suggestion-word {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Result Container */
+.results-container {
+  background-color: var(--card-bg); /* Light background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+.results-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Word Header */
+.word-header {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.word-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+/* Part of Speech Styling */
+.part-of-speech {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+/* Lexical Entry - Word Definitions */
+.lexical-entry {
+  margin-bottom: 1.5rem;
+}
+
+.sense {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.definition {
+  margin-bottom: 1rem;
+}
+
+/* Example Text Styling */
+.example {
+  font-style: italic;
+  color: var(--light-text);
+}
+
+/* Example Label */
+.example:before {
+  content: 'Example: ';
+  font-weight: 600;
+  color: var(--primary-color);
+}
