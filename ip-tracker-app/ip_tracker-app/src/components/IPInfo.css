@@ -1,0 +1,25 @@
+.ip-info {
+    background-color: #111;
+    border: 1px solid #00ff00;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff0050;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: left;
+  }
+  
+  .ip-info p {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .map-container {
+    margin-top: 1.5rem;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #00ff0040;
+  }
+  
