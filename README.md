@@ -10,7 +10,7 @@ Welcome to my **15 Days React.js Projects Challenge**! Over 15 days, I built 15 
 
 ## ✅ Completed Projects
 
-### 1. 🌐 [Static Portfolio Website](https://github.com/Vedant2402/static-portfolio)
+### 1. 🌐 [Static Portfolio Website](https://github.com/Vedant2402/React.js-Projects/tree/main/static-portfolio))
 A clean, responsive developer portfolio built using React.js to showcase skills, projects, and contact details.
 
 ### 2. ☁️ [Weather App](https://github.com/Vedant2402/weather-app)
